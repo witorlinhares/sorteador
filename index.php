@@ -22,7 +22,7 @@
         $min = 1; /*Número mínimo pode ser = ou + que 0*/
         $max = 1000; /*Número máximo deve ser + que o número mínimo*/
         $num = mt_rand($min, $max); /*Determina quais números serão serteados*/
-        echo "<h2>Sorteando um número entre <strong>$min</strong> e <strong>$max</strong><br></h2>
+        echo "<p>Sorteando um número entre <strong>$min</strong> e <strong>$max</strong><br></h2>
         <p>Número sorteado <strong>''$num''</strong></p>" /*Número sorteado exibido*/
         ?>
         <div class="div-button">
