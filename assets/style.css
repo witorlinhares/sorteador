@@ -1,88 +1,114 @@
+
+/*Formatar tela*/
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
 }
 
-body > main {
+/*Tela inteira*/
+.general {
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    background: linear-gradient(to bottom, #33dfc2, #1c99d3);
 }
 
-img {
-    width: 5vw;
-    margin-bottom: 20px;
+/*Container*/
+.container{
+    width: 30vw;
+    padding: 3%;
+    border-radius: 10px;
+    background: #fff;
 }
 
-main > h1 {
-    color: #303030;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 15px;
-}
-
-main p {
-    color: #303030;
-    align-items: center;
+/*div imagem*/
+.div-image{
+    display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/*imagem*/
+.image {
+    width: 5vw;
+}
+
+/*Div titulo*/
+.div-title{
+    padding: 3%;
 
 }
 
-main > button {
-    width: 20vw;
-    font-size: 1em;
-    color: #000;
-    padding: 10px 20px;
-    margin: 5px 0;
-    border-radius: 30px;
-    border: none;
-}
-
-main div button {
-    width: 20vw;
-    background-color: #23c438;
-    font-size: 1em;
+/*Titulo "Sorteador Online"*/
+.title{
+    color: #192652;
+    font-size: 30px;
     font-weight: 600;
+    text-align: center;
+}
+
+/*Sorteando um número*/
+h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #192652;
+    text-align: center;
+    margin: 15px;
+}
+
+/* número sorteado*/
+p {
+    color: #192652;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #f5f5f5;
+
+}
+
+/*div botão*/
+.div-button {
+    padding:  10px;
+    display: flex;
+}
+
+/*botão*/
+.button {
+    width: 50vw;
+    font-size: 15px;
+    font-weight: 500;
     color: #fff;
-    padding: 10px 20px;
-    margin: 5px 0;
-    border-radius: 30px;
+    padding: 15px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
+    background-color: #192652;
 }
 
-@media only screen and (max-width: 950px) {
-    body > main{
+/*Efeito ao passar o mouse sob o botão*/
+.button:hover{
+    background: #36467e;
+}
+
+/*Responsividade*/
+@media only screen and (max-width: 600px) {
+  
+    .container{
+        width: 90vw;
+}
+
+    .button{
         width: 100vw;
-        
-    }
 }
 
-
-@media only screen and (max-width: 700px) {
-    input, ::selection{
-        font-size: 16px;
+    .image{
+        width: 15vw;
+}
 }
 
-main > button{
-    width: 70vw;
-}
-
-main div button{
-    width: 70vw;
-}
-
-img{
-    width: 20vw;
-}
-
-}
+/*Desenvolvido por Witor Linhares*/
